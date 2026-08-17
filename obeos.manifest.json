@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "name": "blackrelay",
+  "component_type": "service",
+  "version": "0.1.0",
+  "entrypoint": "blackrelay",
+  "interfaces": ["cli", "event-consumer"],
+  "capabilities": ["event-routing", "file-watching", "workflow-dispatch"],
+  "lifecycle": "on-demand",
+  "health": {},
+  "dependencies": [],
+  "source_repository": "5K-bit/Blackrelay"
+}
