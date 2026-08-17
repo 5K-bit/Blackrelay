@@ -1,0 +1,31 @@
+name: BlackRelay OBEOS Component CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate manifest and concept
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          manifest = json.loads(Path('obeos.manifest.json').read_text(encoding='utf-8'))
+          assert manifest['schema_version'] == 1
+          assert manifest['name'] == 'blackrelay'
+          assert manifest['component_type'] == 'service'
+          assert Path('docs/blackrelay-concept1.md').exists()
+          PY
