@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="t">
+  <title id="t">BlackRelay icon</title>
+  <rect width="256" height="256" rx="56" fill="#0c1220"/>
+  <rect x="6" y="6" width="244" height="244" rx="50" fill="none" stroke="#7ca8ff" stroke-opacity=".35" stroke-width="4"/>
+  <g transform="translate(31.92 29.88) scale(0.8177)" fill="none" stroke="#7ca8ff" stroke-width="12.23" stroke-linecap="round" stroke-linejoin="round"><circle cx="45" cy="120" r="18"/><circle cx="190" cy="55" r="18"/><circle cx="190" cy="185" r="18"/><path d="M63 120h57V55h52m-52 65v65h52m-16-142 16 12-16 12m0 106 16 12-16 12"/></g>
+</svg>
